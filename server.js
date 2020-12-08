@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 // DATABASE
 // Quickstart de Firebase: https://firebase.google.com/docs/firestore/quickstart
@@ -34,6 +34,7 @@ aTuringRef.set({
 
 // ENDPOINTS
 app.get('/', (req, res) => {
+  console.log('Hello World')
   res.send('Hello World!')
 })
 
